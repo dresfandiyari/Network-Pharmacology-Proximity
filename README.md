@@ -1,6 +1,6 @@
 # Network-Pharmacology-Proximity
 A Python CLI engine for network-based module separation and disease-proximity analysis on the full STRING interactome, for predicting drug-combination and drug-repurposing relationships in Network Pharmacology.
-# Step 15: Network Proximity & Module Separation Engine
+# Network Proximity & Module Separation Engine
 
 ### Interactome-Wide Topological Inference of Drug-Module Relationships
 
