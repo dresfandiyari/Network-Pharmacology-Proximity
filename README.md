@@ -8,7 +8,7 @@ A Python CLI engine for network-based module separation and disease-proximity an
   <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python Version">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
   <img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen.svg" alt="Open Source">
-  <a href="https://doi.org/10.5281/zenodo.XXXXXXX"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg" alt="DOI"></a>
+  <a href="https://doi.org/10.5281/zenodo.21141660"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.21141660.svg" alt="DOI"></a>
   <img src="https://img.shields.io/badge/code%20style-PEP8-orange.svg" alt="Code Style">
 </p>
 
@@ -22,7 +22,11 @@ A Python CLI engine for network-based module separation and disease-proximity an
 
 In **Network Pharmacology**, a shared set of enriched pathways (GO/KEGG) or a handful of overlapping docking targets is suggestive, but not sufficient, evidence that two compounds converge — or diverge — mechanistically. A rigorous, interactome-wide test is needed: are the two compounds' target modules genuinely closer together than chance within the *entire* human protein-protein interaction network, and is each module genuinely closer to the disease phenotype of interest than chance?
 
-This tool implements of a multi-stage Network Pharmacology pipeline: full-interactome **network proximity analysis**.
+This tool implements a full-interactome **network proximity analysis**, following:
+
+- **Menche et al.** (2015) — the module separation measure `S_AB`
+- **Guney et al.** (2016) — degree-preserving null models and the "closest" disease-proximity measure
+- **Cheng et al.** (2019) — applying this framework to classify drug-pair relationships as Overlapping or Complementary Exposure
 
 Given two gene modules (e.g. the predicted targets of Drug A and Drug B) and, optionally, a disease/phenotype gene module, the tool computes:
 
@@ -246,8 +250,8 @@ If this pipeline, in whole or in part, contributes to your research workflow, re
 
 #### APA Format
 
-> Esfandiyari, M. (2026). *Network-Pharmacology-Proximity: An Interactome-Wide Module Separation and Disease-Proximity Engine* (Version 1.0) [Computer software]. GitHub. https://github.com/dresfandiyari/Network-Pharmacology-Proximity
-
+> Esfandiyari, M. (2026). *Network-Pharmacology-Proximity: An Interactome-Wide Module Separation and Disease-Proximity Engine* (Version 1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21141660
+> 
 #### BibTeX
 
 ```bibtex
@@ -255,9 +259,10 @@ If this pipeline, in whole or in part, contributes to your research workflow, re
   author       = {Esfandiyari, Mohammad},
   title        = {{Network-Pharmacology-Proximity: An Interactome-Wide Module Separation and Disease-Proximity Engine}},
   year         = {2026},
-  publisher    = {GitHub},
-  version      = {1.0},
-  url          = {https://github.com/dresfandiyari/Network-Pharmacology-Proximity},
+  publisher    = {Zenodo},
+  version      = {1.0.1},
+  doi          = {10.5281/zenodo.21141660},
+  url          = {https://doi.org/10.5281/zenodo.21141660},
   note         = {a multi-stage Network Pharmacology bioinformatics pipeline}
 }
 ```
