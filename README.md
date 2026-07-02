@@ -16,19 +16,13 @@ A Python CLI engine for network-based module separation and disease-proximity an
   <em>A production-grade CLI tool implementing the Menche/Guney/Cheng network-proximity framework to determine whether two gene modules (e.g. drug target sets) are topologically overlapping or complementary within the full human interactome, and whether each is significantly proximal to a disease/phenotype module.</em>
 </p>
 
-> **Note:** Replace `10.5281/zenodo.XXXXXXX` above with your real DOI after archiving a release of this repository on [Zenodo](https://zenodo.org).
-
 ---
 
 ## Overview
 
 In **Network Pharmacology**, a shared set of enriched pathways (GO/KEGG) or a handful of overlapping docking targets is suggestive, but not sufficient, evidence that two compounds converge — or diverge — mechanistically. A rigorous, interactome-wide test is needed: are the two compounds' target modules genuinely closer together than chance within the *entire* human protein-protein interaction network, and is each module genuinely closer to the disease phenotype of interest than chance?
 
-This tool implements **Step 15** of a multi-stage Network Pharmacology pipeline: full-interactome **network proximity analysis**, following:
-
-- **Menche et al.** (*Science*, 2015) — the module separation measure `S_AB`
-- **Guney et al.** (*Nat Commun*, 2016) — degree-preserving null models and the "closest" disease-proximity measure
-- **Cheng et al.** (*Nat Commun*, 2019) — applying this framework to classify drug-pair relationships as Overlapping or Complementary Exposure
+This tool implements of a multi-stage Network Pharmacology pipeline: full-interactome **network proximity analysis**.
 
 Given two gene modules (e.g. the predicted targets of Drug A and Drug B) and, optionally, a disease/phenotype gene module, the tool computes:
 
@@ -264,7 +258,7 @@ If this pipeline, in whole or in part, contributes to your research workflow, re
   publisher    = {GitHub},
   version      = {1.0},
   url          = {https://github.com/dresfandiyari/Network-Pharmacology-Proximity},
-  note         = {Step 15 of a multi-stage Network Pharmacology bioinformatics pipeline}
+  note         = {a multi-stage Network Pharmacology bioinformatics pipeline}
 }
 ```
 
